@@ -11,7 +11,7 @@ import re
 word_list = []
 
 # Open the speech text file
-with open('speech.txt', 'r') as file:
+with open('Lab7speech.txt', 'r') as file:
     # Read the file
     text = file.read()
     # Find all occurrences of 'the' followed by a word
@@ -20,6 +20,6 @@ with open('speech.txt', 'r') as file:
     word_list.extend(matches)
 
 # Print out the list to a file
-with open('output.txt', 'w') as file:
+with open('Lab7output.txt', 'w') as file:
     for word in word_list:
         file.write(word + '\n') 
